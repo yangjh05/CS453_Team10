@@ -1,0 +1,90 @@
+<html lang="ko"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    <title>메가파일</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="웹하드,영화,드라마,동영상,게임,애니,유틸,음악,만화,다운,스마트폰 서비스 제공">
+   	<meta name="google-site-verification" content="vmnzBg5styz7rAbWN_Hn3BOMnTR_fs8J4OTT-4L4gAg">
+    <meta name="naver-site-verification" content="ce71db8092fca217b39f561283bee0babf4752ec">
+    <meta http-equiv="p3p" content="CP=&quot;CAO DSP AND SO &quot; policyref=&quot;/w3c/p3p.xml&quot;">
+<!--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <meta name="verify-v1" content="mBLyUFY9TTewKYXQwEdDJTqpcMxOPZ/X3AR1KFwIJNM=">
+    <meta name="verify-v1" content="메가파일">
+    <meta name="Keyword" content="메가파일바로가기,메가파일홈페이지,메가파일무료다운로드,메가파일포인트받기,메가파일쿠폰">
+            <meta name="robots" content="index,follow">
+        <meta name="robots" content="all">
+    <meta name="robots" content="noarchive">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="메가파일">
+    <meta property="og:url" content="https://www.megafile.co.kr">
+    <meta property="og:image" content="//img.megafile.co.kr/images/ver2/ci/ci.jpg">
+    <meta property="og:description" content="웹하드,영화,드라마,동영상,게임,애니,유틸,음악,만화,다운,스마트폰 서비스 제공">
+    <meta property="og:keywords" content="메가파일,megafile.co.kr,웹하드,영화,드라마,동영상,게임,애니,유틸,음악,만화,다운,스마트폰 서비스 제공">
+
+    <meta property="al:web:url" content="https://www.megafile.co.kr">
+    <meta property="al:android:url" content="https://play.google.com/store/apps/details?id=co.kr.megafile.app">
+    <meta property="al:android:package" content="co.kr.megafile.app">
+    <meta property="al:android:app_name" content="메가파일">
+    <meta property="al:ios:url" content="https://itunes.apple.com/kr/app/id1153462687">
+    <meta property="al:ios:app_store_id" content="1153462687">
+    <meta property="al:ios:app_name" content="메가파일">
+
+    <link rel="shortcut icon" href="//img.megafile.co.kr/images/favicon.ico">
+    <link rel="canonical" href="//www.megafile.co.kr">
+    <link rel="index" title="megafile.co.kr" href="https://megafile.co.kr">
+
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=DC-10068000&amp;l=dataLayer&amp;cx=c&amp;gtm=45He51g0v9194212790za200"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=DC-13066015&amp;l=dataLayer&amp;cx=c&amp;gtm=45He51g0v9194212790za200"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5KKFWCFJ"></script><script type="application/ld+json">
+ {
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "megafile",
+  "url": "http://www.megafile.co.kr",
+  "sameAs": [
+    "https://www.facebook.com/www.megafile.co.kr",
+    "http://blog.naver.com/megafile114/",
+    "https://itunes.apple.com/kr/app/id852910601" ,
+    "https://play.google.com/store/apps/details?id=co.kr.megafile.psapp"
+  ]
+ }
+</script>
+
+<!--Social Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5KKFWCFJ');</script>
+<!-- End Google Tag Manager -->
+
+    
+<!--
+Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+<!-- Global site tag (gtag.js) - Google Marketing Platform -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=DC-10068000"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'DC-10068000');
+</script>
+<!-- End of global snippet: Please do not remove -->
+</head>
+
+<frameset rows="100%,0%" cols="*" framespacing="0" frameborder="NO" border="0">
+<frame src="/main/index.php?ver=1737479464" name="main" noresize=""><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><iframe height="0" width="0" src="https://13066015.fls.doubleclick.net/activityi;src=13066015;type=mega_ret;cat=megaf0;ord=164663991207;npa=0;auiddc=37217855.1737479457;ps=1;pcor=1299167699;uaa=x86;uab=64;uafvl=Google%2520Chrome%3B131.0.6778.266%7CChromium%3B131.0.6778.266%7CNot_A%2520Brand%3B24.0.0.0;uamb=0;uam=;uap=Windows;uapv=15.0.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe51g0v9173069075z89194212790za201zb9194212790;gcd=13l3l3l3l1l1;dma=0;tag_exp=102067555~102067808~102081485~102123608;epver=2;~oref=https%3A%2F%2Fwww.megafile.co.kr%2F?" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="DC-13066015/mega_ret/megaf0+standard" data-load-time="1737479464553" height="0" width="0" src="https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=13066015;type=mega_ret;cat=megaf0;ord=164663991207;npa=0;auiddc=37217855.1737479457;ps=1;pcor=1299167699;uaa=x86;uab=64;uafvl=Google%2520Chrome%3B131.0.6778.266%7CChromium%3B131.0.6778.266%7CNot_A%2520Brand%3B24.0.0.0;uamb=0;uam=;uap=Windows;uapv=15.0.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe51g0v9173069075z89194212790za201zb9194212790;gcd=13l3l3l3l1l1;dma=0;tag_exp=102067555~102067808~102081485~102123608;epver=2;~oref=https%3A%2F%2Fwww.megafile.co.kr%2F?" style="display: none; visibility: hidden;"></iframe>
+</frameset>
+
+<noframes>
+<body>
+
+<!--Social Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KKFWCFJ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</body>
+</noframes>
+</html>

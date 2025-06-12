@@ -1,0 +1,297 @@
+@import "./Variables.css";
+
+.full-container {
+  height: 100%;
+}
+
+.full-screen-container {
+  height: var(--full-screen-height);
+  box-sizing: border-box;
+}
+ 
+/* Button Container */
+.button-container {
+  display: flex;
+  gap: 10px; /* 버튼 간의 간격 */
+}
+
+/* Content Area */
+.content-area {
+  width: var(--domain-content-width);
+  height: 100%; /* 부모 요소의 height를 따름 */
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  justify-content: space-between; /* 위와 아래에 아이템 배치 */
+}
+
+.content-area h1,
+.content-area h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: rgba(206, 206, 206, 1) 0.7px solid;
+  border-radius: 8px;
+  width: auto;
+  height: calc(var(--full-screen-height) - 40px);
+  display: inline-block;
+  padding: 25px 40px 25px 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.info-block h3 {
+  margin: 0px 0px 10px 0;
+}
+
+.info {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info label {
+  width: 120px; /* 라벨 고정 너비 */
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.save-config {
+  background-color: white;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.save-config:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+/* Progress List */
+.content-area ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-area ul li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Flow Section */
+.flow {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: calc(92% - 20px);
+  box-sizing: border-box;
+}
+
+.flow-workspace {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.generate-flow {
+  background-color: #007bff;
+  color: #fff;
+  border: #007bff 1px solid;
+}
+
+.generate-flow:hover {
+  background-color: #0056b3;
+  border: #0056b3 1px solid;
+}
+
+/* Component Section */
+.components {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.left {
+  width: var(--component-list-width);
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  justify-content: space-between; /* 위와 아래에 아이템 배치 */
+}
+
+.list-container {
+  max-height: 87%; /* 스크롤이 필요한 최대 높이 */
+  width: 100%; /* 너비 고정 */
+  overflow-y: auto; /* Y축 스크롤 활성화 */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fafafa;
+}
+
+.list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* 스크롤바 색상 */
+  border-radius: 4px;
+}
+
+.list-container::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* 스크롤바 호버 색상 */
+}
+
+.list-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 스크롤 트랙 색상 */
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-item.selected {
+  background-color: #f0f8ff;
+}
+
+.list-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-item span {
+  color: #007bff;
+}
+
+.list-item.selected span {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}
+
+.apply-changes {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
+
+.apply-changes:hover {
+  background-color: #0056b3;
+  color: #ddd;
+}
+
+.add-component {
+  background-color: #ffffff;
+  border: #04c71b 1px solid;
+  color: #04c71b;
+}
+
+.add-component:hover {
+  background-color: #04c71b;
+  border: #04c71b 1px solid;
+  color: #fff;
+}
+
+/* Selector Section */
+.selectors {
+  width: var(--component-flow-width);
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: 100;
+}
+
+.edit {
+  background-color: #fff;
+  color: #04c71b;
+  border: #04c71b 1px solid;
+}
+
+.edit:hover {
+  background-color: #04c71b;
+  color: #fff;
+}
+
+.submit {
+  background-color: #007bff;
+  color: #fff;
+  border: #007bff 1px solid;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+.show-and-edit-selected-key {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  height: var(--edit-name-height);
+  box-sizing: border-box;
+}
+
+.show-and-edit-selected-key h3 {
+  margin: 0;
+}
+
+.blockly-workspace {
+  width: 100%;
+  height: var(--component-blockly-height);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

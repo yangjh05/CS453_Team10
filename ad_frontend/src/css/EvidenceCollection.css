@@ -1,0 +1,298 @@
+.start-crawling {
+	background-color: #007bff;
+	border: none;
+	color: white;
+}
+
+.start-crawling:hover {
+	background-color: #0056b3;
+}
+
+.stop-crawling {
+	background-color: #ff4d4d;
+	border: none;
+	color: white;
+}
+
+.stop-crawling:hover {
+	background-color: #e60000;
+}
+
+.collection-content-area {
+	width: var(--domain-content-width);
+	height: 100%; /* 부모 요소의 height를 따름 */
+	display: flex;
+	flex-direction: column; /* 세로 방향으로 정렬 */
+}
+
+
+/* 컨테이너 스타일 */
+.error-log-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  /* 에러 로그가 없을 때 메시지 */
+  .no-error-message {
+	text-align: center;
+	padding: 60px 20px;
+	color: #6b7280;
+	font-size: 16px;
+	background: #f9fafb;
+	border: 2px dashed #d1d5db;
+	border-radius: 12px;
+	margin: 20px 0;
+  }
+  
+  /* 테이블 컨테이너 */
+  .table-container {
+	overflow: auto;
+	max-height: 70vh; /* 뷰포트 높이의 70%로 제한 */
+	border-radius: 12px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	background: white;
+	border: 1px solid #e5e7eb;
+	position: relative;
+  }
+  
+  /* 테이블 기본 스타일 */
+  .error-log-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: white;
+	font-size: 14px;
+	line-height: 1.5;
+  }
+  
+  /* 테이블 헤더 고정 */
+  .error-log-table thead {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+  }
+  
+  .error-log-table thead th {
+	padding: 16px 20px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border: none;
+  }
+  
+  .error-log-table thead th:first-child {
+	border-top-left-radius: 12px;
+  }
+  
+  .error-log-table thead th:last-child {
+	border-top-right-radius: 12px;
+  }
+  
+  /* 테이블 바디 */
+  .error-log-table tbody tr {
+	border-bottom: 1px solid #f3f4f6;
+	transition: background-color 0.2s ease;
+  }
+  
+  .error-log-table tbody tr:hover {
+	background-color: #f8fafc;
+  }
+  
+  .error-log-table tbody tr:last-child {
+	border-bottom: none;
+  }
+  
+  .error-log-table tbody td {
+	padding: 16px 20px;
+	vertical-align: top;
+  }
+  
+  /* Crawl # 컬럼 스타일 */
+  .error-log-table tbody td:first-child {
+	font-weight: 600;
+	color: #374151;
+	font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+  }
+  
+  /* Level 컬럼 스타일 */
+  .level-error {
+	display: inline-flex;
+	align-items: center;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background-color: #fee2e2;
+	color: #dc2626;
+	border: 1px solid #fecaca;
+  }
+  
+  .level-warning {
+	display: inline-flex;
+	align-items: center;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background-color: #fef3c7;
+	color: #d97706;
+	border: 1px solid #fde68a;
+  }
+  
+  .level-info {
+	display: inline-flex;
+	align-items: center;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background-color: #dbeafe;
+	color: #2563eb;
+	border: 1px solid #bfdbfe;
+  }
+  
+  .level-success {
+	display: inline-flex;
+	align-items: center;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background-color: #dcfce7;
+	color: #16a34a;
+	border: 1px solid #bbf7d0;
+  }
+  
+  .level-debug {
+	display: inline-flex;
+	align-items: center;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background-color: #f3f4f6;
+	color: #6b7280;
+	border: 1px solid #d1d5db;
+  }
+  
+  /* Message 컬럼 스타일 */
+  .error-log-table tbody td:last-child {
+	color: #374151;
+	line-height: 1.6;
+	max-width: 400px;
+	word-wrap: break-word;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+	.error-log-container {
+	  padding: 16px;
+	}
+	
+	.table-container {
+	  max-height: 60vh; /* 모바일에서는 조금 더 작게 */
+	}
+	
+	.error-log-table {
+	  font-size: 13px;
+	}
+	
+	.error-log-table thead th,
+	.error-log-table tbody td {
+	  padding: 12px 16px;
+	}
+	
+	.error-log-table tbody td:last-child {
+	  max-width: 200px;
+	}
+	
+	.no-error-message {
+	  padding: 40px 16px;
+	  font-size: 14px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.table-container {
+	  max-height: 50vh; /* 작은 화면에서는 더 작게 */
+	}
+	
+	.error-log-table thead th,
+	.error-log-table tbody td {
+	  padding: 10px 12px;
+	}
+	
+	.error-log-table {
+	  font-size: 12px;
+	}
+	
+	.level-error,
+	.level-warning,
+	.level-info,
+	.level-success,
+	.level-debug {
+	  font-size: 10px;
+	  padding: 4px 8px;
+	}
+  }
+  
+  /* 스크롤바 스타일 (Webkit 브라우저용) */
+  .table-container::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+	background: #f1f5f9;
+	border-radius: 4px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+	background: #cbd5e1;
+	border-radius: 4px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+	background: #94a3b8;
+  }
+  
+  .table-container::-webkit-scrollbar-corner {
+	background: #f1f5f9;
+  }
+  
+  /* 로딩 애니메이션 (선택사항) */
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(10px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .error-log-table tbody tr {
+	animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* 액세스 가능성을 위한 포커스 스타일 */
+  .error-log-table:focus-within {
+	outline: 2px solid #3b82f6;
+	outline-offset: 2px;
+  }

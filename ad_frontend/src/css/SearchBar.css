@@ -1,0 +1,117 @@
+@import "./Variables.css";
+
+/* Search Bar 스타일 */
+.search-bar {
+  width: calc(var(--search-width) - 20px); /* 화면의 왼쪽 1/4 */
+  height: calc(100% - 30px);
+  margin: 20px 10px 10px 10px;
+  box-sizing: border-box;
+  /* border-right: 1px solid #ccc; /* 오른쪽 구분선 */
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+}
+
+/* Search Bar Header */
+.search-bar h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input과 Button 한 줄에 배치 */
+.search-bar-input {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 인풋과 버튼 간격 */
+  padding-bottom: 20px;
+  height: var(--search-input-height);
+  box-sizing: border-box;
+}
+
+.search-bar-input input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-bar-input input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar-input button {
+  flex-shrink: 0; /* 버튼 크기 고정 */
+  width: 30%; /* 버튼은 내용에 맞게 크기 설정 */
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Domain List */
+.domain-list {
+  height: var(--domain-list-height);
+  box-sizing: border-box;
+  overflow-y: auto; /* 스크롤 가능 */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.domain-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.domain-list li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.domain-list li:hover {
+  background-color: #f0f8ff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a Domain 버튼 */
+.solo-button-container {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: flex-end; /* 세로 중앙 정렬 */
+  height: var(--solo-button-container-height);
+}
+
+.add-domain {
+  width: 100%;
+  height: 35%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-domain:hover {
+  background-color: #218838;
+}

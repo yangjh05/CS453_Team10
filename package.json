@@ -1,0 +1,21 @@
+{
+  "name": "fullstack_ad",
+  "version": "1.0.0",
+  "description": "블록코딩 코드 구성\r Flow\r 1. 로그인 및 사전준비(성인 링크 접속)\r 2. if len(검색어 길이) > 0(사이트마다 다름) => 검색어 입력 로직\r 3. num 변수 정의: 다운로드 개수\r 4. while num > 0\r 4-1. 해당 페이지의 리스트를 변수로 저장\r 4-2. for 그 리스트\r 4-2-1. 링크 클릭(팝업으로 전환 필요할수도)\r 4-2-2. 다운로드 상태 확인\r 4-2-3. 다운로드 버튼 클릭\r 4-2-4. 다운로드 트래킹\r 4-2-5. num 감소\r 4-2-6. num이 0이면 종료\r 4-3. 다음 페이지로 이동",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --raw \"npm run flask\" \"npm run celery\" \"npm run react\"",
+    "flask": "cd AutoDownload_selenium && python run.py",
+    "celery": "cd AutoDownload_selenium && celery -A app.celery worker --loglevel=info --concurrency=10 -P gevent",
+    "react": "cd ad_frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

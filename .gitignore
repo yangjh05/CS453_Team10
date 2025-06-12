@@ -1,0 +1,20 @@
+# 공통
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# React 프로젝트: /ad_frontend
+/ad_frontend/build
+/ad_frontend/.env
+/ad_frontend/.env.*
+
+# Python 프로젝트: /AutoDownload_selenium
+/AutoDownload_selenium/venv/
+/AutoDownload_selenium/env/
+/AutoDownload_selenium/frames/
+/AutoDownload_selenium/*.log
+/AutoDownload_selenium/.ipynb_checkpoints/

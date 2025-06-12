@@ -1,0 +1,40 @@
+{
+    "urls": {
+        "base_url": "https://www.naver.com/"
+    },
+    "selectors": {
+        "id_input": "",
+        "pwd_input": "",
+        "login_button": "",
+        "search_input": "//*[@id='query']",
+        "search_button": "//*[@id='search-btn']"
+    },
+    "methods": [
+        {
+            "type": "function",
+            "name": "visit",
+            "args": [
+                "['urls']['base_url']"
+            ]
+        },
+        {
+            "type": "function",
+            "name": "enter",
+            "args": [
+                "\"KAIST\"",
+                "['selectors']['search_input']"
+            ]
+        },
+        {
+            "type": "function",
+            "name": "click",
+            "args": [
+                "['selectors']['search_button']"
+            ]
+        }
+    ],
+    "credentials": {
+        "username": "",
+        "password": ""
+    }
+}

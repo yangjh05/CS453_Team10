@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* body가 전체 화면을 차지하도록 설정 */
+  overflow: hidden; /* 강제로 스크롤을 제거 */
+}
+
+#root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 필요 시 지정 */
+  width: 100%; /* 필요 시 지정 */
+}
+
+/* 전체 세팅 */
+.mini-btn {
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mini-btn:hover {
+  transform: scale(1.05);
+}
+
+.mini-btn:active {
+  transform: scale(0.95);
+}
+
+.default-input {
+  width: 300px; /* 인풋 고정 너비 */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

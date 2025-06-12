@@ -1,0 +1,30 @@
+:root {
+    /* Navigation Bar */
+    --nav-height: min(6vh, 50px);
+
+    /* Contents */
+    --screen-height: calc(100vh - var(--nav-height));
+
+    /* Download Screen */
+
+    /* Edit Screen */
+
+    /* Search Bar */
+    --search-width: 0%;
+    --solo-button-container-height: max(13%, 114px);
+    --search-input-height: 7%;
+    --domain-list-height: calc(100% - var(--search-input-height) - var(--solo-button-container-height));
+
+    /* 1. Basic Info */
+
+    /* 2. Component Blockly */
+    --domain-content-width: calc(100% - var(--search-width));
+    --full-screen-height: 95%;
+    --pagination-height: calc(100% - var(--full-screen-height));
+    --component-list-width: 20%;
+    --component-flow-width: calc(100% - var(--component-list-width));
+    --edit-name-height: 6%;
+    --component-blockly-height: calc(100% - var(--edit-name-height));
+
+    /* 3. Flow Blockly */
+}
